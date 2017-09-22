@@ -7,6 +7,8 @@ def prime?(num)
     range.each do |divisor|
       if num % divisor.to_f == 0.0
         false
+      else
+        true
       end
     end
   end
