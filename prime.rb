@@ -1,7 +1,7 @@
 def prime?(num)
   if num == 1 || num == 2 || num == 3
     true
-  elsif num < 0
+  elsif num <= 0
     false
   else
     sq = num ** 0.5
