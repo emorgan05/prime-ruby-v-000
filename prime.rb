@@ -1,8 +1,8 @@
 def prime?(num)
-  if num == 2 || num == 3
-    true
-  elsif num <= 1
+  if num <= 1
     false
+  elsif num == 2 || num == 3
+    true
   else
     sq = num ** 0.5
     range = (2..sq).to_a
