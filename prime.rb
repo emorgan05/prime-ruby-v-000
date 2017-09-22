@@ -4,13 +4,11 @@ def prime?(num)
   else
     sq = num ** 0.5
     range = (2..sq).to_a
+    remainders = []
     range.each do |divisor|
-      if num % divisor.to_f == 0.0
-        false
-      else
-        true
-      end
+      remainders >> num % divisor.to_f
     end
+    remainders.all? { |remainder| remainder == 0.0 }
   end
 end
 
