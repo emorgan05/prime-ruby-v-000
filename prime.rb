@@ -6,9 +6,9 @@ def prime?(num)
     range = (2..sq).to_a
     remainders = []
     range.each do |divisor|
-      remainders >> num % divisor.to_f
+      remainders << num % divisor.to_f
     end
-    remainders.all? { |remainder| remainder == 0.0 }
+    remainders.all? { |remainder| remainder != 0.0 }
   end
 end
 
